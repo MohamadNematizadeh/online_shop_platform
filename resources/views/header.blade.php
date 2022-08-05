@@ -1,96 +1,109 @@
-<!-- Topbar Start -->
-<div class="col-lg-6 text-center text-lg-right">
-    <div class="d-inline-flex align-items-center">
-        <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">اکانت</button>
-            <div class="dropdown-menu dropdown-menu-right">
-                <button class="dropdown-item" type="button">ورود به حساب کاربری</button>
-                <button class="dropdown-item" type="button">خروج از حساب کاربری</button>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center h-100">
+                    <a class="text-body mr-3" href="">درباره ما</a>
+                    <a class="text-body mr-3" href="">تماس با ما</a>
+                    <a class="text-body mr-3" href=""> ورود به وبسایت</a>
+
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center d-block d-lg-none">
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-heart text-danger"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                    <a href="" class="btn px-0 ml-2">
+                        <i class="fas fa-shopping-cart text-dark"></i>
+                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="d-inline-flex align-items-center d-block d-lg-none">
-        <a href="" class="btn px-0 ml-2">
-            <i class="fas fa-heart text-dark"></i>
-            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-        </a>
-        <a href="" class="btn px-0 ml-2">
-            <i class="fas fa-shopping-cart text-dark"></i>
-            <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-        </a>
-    </div>
-</div>
-</div>
-<div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
-    <div class="col-lg-4">
-        <a href="" class="text-decoration-none">
-            <span class="h1 text-uppercase text-primary bg-dark px-2">محمد</span>
-            <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">شاپ</span>
-        </a>
-
-    </div>
-    <div class="col-lg-4 col-6 text-left">
-        <form action="">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="جوستجو کردن در محمد شاپ...">
-                <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4 text-right">
+                <a href="/" class="text-decoration-none">
+                    <a href="" class="text-decoration-none">
+                        <span class="h1 text-uppercase text-primary bg-dark px-2">محمد</span>
+                        <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">شاپ</span>
+                    </a>
+                </a>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control rounded-right" placeholder="جستجوی کالا">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary rounded-left">
                                 <i class="fa fa-search"></i>
                             </span>
-                </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-</div>
-</div>
-<!-- Topbar End -->
-
-
-<!-- Navbar Start -->
-<div class="container-fluid bg-dark mb-30">
-    <div class="row px-xl-5">
-        <div class="c">
-            <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
-                <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>دسته بندی ها</h6>
-                <i class="fa fa-angle-down text-dark"></i>
-            </a>
-            <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
-                <div class="navbar-nav w-100">
-                    <div class="nav-item dropdown dropright">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">کالای دیجیتال</a>
-                    </div>
-                    <a href="" class="nav-item nav-link">مد و پوشاک</a>
-                    <a href="" class="nav-item nav-link">خانه و اشپزی</a>
-                    <a href="" class="nav-item nav-link">ابزار و تجهیزات</a>
-                </div>
-            </nav>
+            <div class="col-lg-4 col-6 text-left">
+                <p class="m-0">پشتیبانی مشتریان</p>
+                <h5 class="m-0">09156006138</h5>
+            </div>
         </div>
-        <div class="col-lg-9">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
-                <a href="" class="text-decoration-none d-block d-lg-none">
-                    <span class="h1 text-uppercase text-primary bg-dark px-2">محمد</span>
-                    <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">شاپ</span>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mx-2"></i>دسته‌بندی محصولات</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
                 </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="/" class="nav-item nav-link active">خانه</a>
-                        <a href="/products" class="nav-item nav-link">فروشگاه</a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div class="navbar-nav w-100">
+                        <!-- <div class="nav-item dropdown dropright">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dresses <i class="fa fa-angle-right float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
+                                <a href="" class="dropdown-item">Men's Dresses</a>
+                                <a href="" class="dropdown-item">Women's Dresses</a>
+                                <a href="" class="dropdown-item">Baby's Dresses</a>
+                            </div>
+                        </div> -->
+                        <a href="" class="nav-item nav-link">Shirts</a>
                     </div>
-                    <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                        <a href="" class="btn px-0">
-                            <i class="fas fa-heart text-primary"></i>
-                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                        </a>
-                        <a href="" class="btn px-0 ml-3">
-                            <i class="fas fa-shopping-cart text-primary"></i>
-                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
-                        </a>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-0">
+                    <a href="/" class="text-decoration-none d-block d-lg-none w-50">
+                        <img src="img/logo/logo-white.png" alt="" width="80%">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto pt-3 text-right">
+                            <a href="/" class="nav-item py-2 nav-link active">خانه</a>
+                            <a href="/" class="nav-item py-2 nav-link">فروشگاه</a>
+                            <a href="/products" class="nav-item py-2 nav-link">کالاها</a>
+                            <a href="/cart" class="nav-item py-2 nav-link">جزییات خرید</a>
+                            <!-- <a href="checkout.html" class="dropdown-item">Checkout</a> -->
+                        </div>
+                        <div class="navbar-nav mr-auto pt-3 d-none d-lg-block">
+                            <a href="" class="btn px-0">
+                                <i class="fas fa-heart text-danger"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                            <a href="" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-warning"></i>
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">0</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </div>
-</div>
+    <!-- Navbar End -->
