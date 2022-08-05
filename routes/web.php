@@ -26,7 +26,7 @@ Route::get('/',[CartController::class, "index"]);
 Route::get('/products',[CartController::class, "orders"])->name('products.order');
 Route::get('/product',[CartController::class, "order"])->name('product.order');
 Route::get('/admin',[AdminController::class, "index"]);
-Route::get('/profile',[UserController::class, "profile"])->middleware("auth");
+Route::get('/profile',[UserController::class, "profile"]);
 Route::get('/login',[UserController::class, 'login_get']);
 Route::post('/login',[UserController::class, 'login_post']);
 
@@ -34,6 +34,11 @@ Route::get('/register',[UserController::class, 'register_get']);
 Route::post('/register',[UserController::class, 'register_post']);
 
 Route::get('/logout',[UserController::class,'logout']);
+Route::get('/admin_dashboard',[AdminController::class, "admin_get"]);
+Route::post('/admin_dashboard',[AdminController::class, "admin_post"]);
+Route::get('/profile_amin',[AdminController::class, "admin_profile"]);
+Route::get('/admin_logout',[AdminController::class, "admin_logout"]);
+
 
 Route::get('/admin/cities',[CityController::class, "get_all"]);
 Route::get('/admin/cities/add', [CityController::class, 'add_get']);
