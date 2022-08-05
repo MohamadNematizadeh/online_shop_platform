@@ -1,65 +1,53 @@
 
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-secondary mt-5 pt-5">
-    <div class="row px-xl-5 pt-5">
-        <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-            <a href="" class="text-decoration-none">
-                <span class="h1 text-uppercase text-primary bg-dark px-2">محمد</span>
-                <span class="h1 text-uppercase text-dark bg-primary px-2 ml-n1">شاپ</span>
-            </a>
-            <hr>
-            <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i> ۶۱۹۳۰۰۰۰ - ۰۲۱
+                <!-- Footer Start -->
+                <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+                    <div class="row px-xl-5 pt-5">
+                        <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                            <h5 class="text-secondary text-uppercase mb-4">با ما در تماس باشید</h5>
+                            <p class="mb-2">Iran, Mashhad<i class="fa fa-map-marker-alt text-primary mr-3"></i></p>
+                            <p class="mb-2">info@Mohammadshop.com<i class="fa fa-envelope text-primary mr-3"></i></p>
+                            <p class="mb-0">09156006138<i class="fa fa-phone-alt text-primary mr-3"></i></p>
+                        </div>
+                        <div class="col-lg-8 col-md-12">
+                            <div class="row">
+                                <div class="col-md-4 mb-5">
+                                    <h5 class="text-secondary text-uppercase mb-4">&nbsp;</h5>
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right ml-2"></i>خانه</a>
+                                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right ml-2"></i>سبد خرید</a>
+                                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right ml-2"></i>درباره ما</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                    <h5 class="text-secondary text-uppercase mb-4">دسترسی به حساب کاربری</h5>
+                                    <div class="d-flex flex-column justify-content-start">
+                                        <a class="text-secondary mb-2" href="{{url("login")}}"><i class="fa fa-angle-right ml-2"></i>ورد به حساب کاربری</a>
+                                        <a class="text-secondary mb-2" href="{{url("logout")}}"><i class="fa fa-angle-right ml-2"></i>خروج حساب کاربری</a>
+                                        <a class="text-secondary mb-2" href="{{url("admin_dashboard")}}"><i class="fa fa-angle-right ml-2"></i>ورد به حساب ادمین</a>
+                                        <a class="text-secondary mb-2" href="{{url("admin_logout")}}"><i class="fa fa-angle-right ml-2"></i>خروج حساب ادمین</a>
 
-            </p>
-        </div>
-        <div class="col-lg-8 col-md-12">
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">فروشگاه
-                    </h5>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>صفحه اصلی</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>فروشگاه</a>
-                        <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>سبد خرید</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                    <h6 class="text-secondary text-uppercase mb-3">همراه ما باشید</h6>
+                                    <div class="d-flex justify-content-end mt-5">
+                                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+                        <div class="col-md-12 px-xl-0 w-100">
+                            <p class="mb-md-0 text-center text-md-center text-secondary">
+                                &copy;Mohammad
+
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <h5 class="text-secondary text-uppercase mb-4">دسترسی به اکانت</h5>
-                    <div class="d-flex flex-column justify-content-start">
-
-                        <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>تماس با ما</a>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-
-                    </form>
-                    <h6 class="text-secondary text-uppercase mt-4 mb-3">ما را دنبال کنید
-                    </h6>
-                    <div class="d-flex">
-                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <div class="col-md-6 px-xl-0">
-            <p class="mb-md-0 text-center text-md-left text-secondary">
-                &copy; <a class="text-primary" href="#"> 2022</a> این سایت متعلق به فروشکاه محمد شاپ می باشد.
-
-            </p>
-        </div>
-        <div class="col-md-6 px-xl-0 text-center text-md-right">
-            <img class="img-fluid" src="img/payments.png" alt="">
-        </div>
-    </div>
-</div>
-<!-- Footer End -->
-
-
-<!-- Back to Top -->
-<a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+                <!-- Footer End -->
+                <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
