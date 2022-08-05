@@ -8,8 +8,8 @@
         <div class="col">
             <form method="post" action="{{url("/login")}}">
                 <div class="mb-3">
-                    <label  class="form-label">Email address</label>
-                    <input type="email" class="form-control" name="email" >
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control"  name="email">
                 </div>
                 <div class="mb-3">
                     <label  class="form-label">Password</label>
