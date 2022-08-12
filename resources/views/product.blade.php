@@ -180,18 +180,16 @@
                                 <div class="col-md-6">
                                     <h4 class="mb-4">مشاهده نطرات کاربران</h4>
                                     <div class="media mb-4">
-                                        <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                        @foreach($Comments as $Comment)
                                         <div class="media-body">
-                                            <h6>John Doe<small> - <i>01 Jan 2045</i></small></h6>
+                                            <h6><small>{{$Comment->user->name}}</small></h6>
                                             <div class="text-primary mb-2">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star-half-alt"></i>
-                                                <i class="far fa-star"></i>
                                             </div>
-                                            <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
+                                            <p>{{ $Comment->text}}</p>
                                         </div>
+                                        @endforeach
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -206,21 +204,15 @@
                                             <i class="far fa-star"></i>
                                         </div>
                                     </div>
-                                    <form>
+                                    <form method="post" id="form-comment-">
                                         <div class="form-group">
                                             <label for="message">نطر خودرا تایپ کنید</label>
                                             <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="name">نام خودرا وارد کنید</label>
-                                            <input type="text" class="form-control" id="name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">ایمیل خودرا وارد کنید</label>
-                                            <input type="email" class="form-control" id="email">
-                                        </div>
                                         <div class="form-group mb-0">
-                                            <input type="submit" value="ثبت نظر" class="btn btn-primary px-3">
+                                            <input type="hidden" name="product_id" value="">
+                                            <input type="hidden" name="_token" value="{{csrf_token()}}" >
+                                            <input type="button"  onclick='send_comment()' value="ثبت نظر" class="btn btn-primary px-3">
                                         </div>
                                     </form>
                                 </div>
@@ -231,15 +223,13 @@
             </div>
         </div>
     </div>
-    <!-- Shop Detail End -->
 
 
-    <!-- Products Start -->
     <div class="container-fluid py-5">
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary pr-3">کالاهای مشابه</span></h2>
         <div class="row px-xl-5">
             <div class="col">
-                @foreach($Product as $Produc)
+                @foreach($Products as $Product)
 
                 <div class="owl-carousel related-carousel">
                     <div class="product-item bg-light">
@@ -254,9 +244,9 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <a class="h6 text-decoration-none text-truncate" href="">{{ $Produc->name}}</a>
+                            <a class="h6 text-decoration-none text-truncate" href="">{{$Product->name}}</a>
                             <div class="d-flex align-items-center justify-content-center mt-2">
-                                <h6>{{ $Produc->price}}</h6>
+                                <h6>{{ $Product->price}}</h6>
                             </div>
                             <div class="d-flex align-items-center justify-content-center mb-1">
                                 <small class="fa fa-star text-primary mr-1"></small>
@@ -278,5 +268,38 @@
 
 
 
+    <script>
+        function send_comment(product_id){
+            let form = document.getElementById("form-comment-"+product_id);
+            let form_data = new FormData(form);
 
+            fetch("{{url('/send-comment')}}" , {
+                method:"post",
+                body:form_data
+            }).then(result=>result.text()
+            ).then(result=>{
+                console.log(result);
+                if(result==1){
+
+
+                    let list_comments = document.getElementById("list-comments-"+product_id);
+
+                    let li = document.createElement("LI");
+                    li.classList.add("list-group-item");
+                    li.classList.add("list-group-item-action");
+
+                    let p=document.createElement("P");
+                    p.classList.add("mb-1");
+                    p.innerHTML = form_data.get("text");
+
+                    li.appendChild(p);
+                    list_comments.appendChild(li);
+                }
+            }).catch(error=>{
+                alert(error);
+            });
+
+
+        }
+    </script>
 @endsection
