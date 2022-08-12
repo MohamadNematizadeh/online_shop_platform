@@ -13,7 +13,7 @@ class AdminController extends Controller
     }
     function admin_get()
     {
-        return view("client.admin");
+        return view("admin_dashboard.admin");
 
     }
     function admin_post(Request $request)
@@ -22,7 +22,7 @@ class AdminController extends Controller
         //     'email' => 'required',
         //    'password' => 'required|min:8',
         //   ]);
-        if (Auth::attempt(["user_name"=>$request["Mohammad"],"password"=>$request["12345"]]))
+        if (Auth::attempt(["email"=>$request["email"],"password"=>$request["password"], "role"=>"0"],$request["remember_me"]))
         {
             return redirect("/profile_amin")->with([
                 "message"=>" شما با موفقیت وارد حساب کاربری خود شدین"
@@ -39,7 +39,7 @@ class AdminController extends Controller
     }
     function admin_profile()
     {
-        return view("client.admin_profile");
+        return view("admin_dashboard.admin_profile");
 
     }
     function admin_logout()

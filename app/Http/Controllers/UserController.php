@@ -20,11 +20,11 @@ class UserController extends Controller
     }
     function login_post(Request $request)
     {
-        $this->validate($request,[
-            'email' => 'required',
-            'password' => 'required|min:8',
-        ]);
-        if (Auth::attempt(["email"=>$request["email"],"password"=>$request["password"]]))
+      //  $this->validate($request,[
+       //     'email' => 'required',
+        //    'password' => 'required|min:8',
+     //   ]);
+        if (Auth::attempt(["email"=>$request["email"],"password"=>$request["password"], "role"=>"1"],$request["remember_me"]))
         {
             return redirect("/profile")->with([
                 "message"=>" شما با موفقیت وارد حساب کاربری خود شدین"
@@ -32,13 +32,14 @@ class UserController extends Controller
         }
         else
         {
-            return redirect("login")->with([
+            return redirect("/profile")->with([
                 "massage"=>"ایمیل یا گذرواژه به درستی وارد نشده"
             ]);
 
         }
 
     }
+
     function register_get()
     {
         $cities = City::all();
@@ -49,11 +50,11 @@ class UserController extends Controller
     function register_post(Request $request)
     {
         $this->validate($request,[
-            'email' => 'required|unique:users',
-            'user_name' => 'required|unique:users',
-            'name'=> 'required|max:120',
-            'password'=>'required|max:8',
-            'password2'=>'same:password',
+        //    'email' => 'required|unique:users',
+        //    'user_name' => 'required|unique:users',
+       //     'name'=> 'required|max:120',
+       //     'password'=>'required|max:8',
+         'password2'=>'same:password',
         ]);
         $new_user = new User();
         $new_user->name = $request["name"];
@@ -73,6 +74,6 @@ class UserController extends Controller
     }
 
     function get_all(){
-            return view('admin.user');
+        return view('admin.user');
     }
 }
