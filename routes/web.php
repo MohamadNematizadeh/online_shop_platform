@@ -11,6 +11,8 @@ use App\Http\Controllers\CommentController;
 
 
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,10 +27,11 @@ use App\Http\Controllers\CommentController;
 
 
 Route::get('/',[CartController::class, "index"]);
-Route::get('/products',[ProductController::class, "get_all_for_client"])->name('products.order');
+Route::get('/products',[ProductController::class, "get_all_for_client"]);
 Route::get('/product',[CartController::class, "order"])->name('product.order');
-Route::get('/product/{id}',[ProductController::class, "index"] );
+Route::get('/product/{id}',[ProductController::class, "product_details"] );
 Route::post('/product-info',[ProductController::class, "product_info"]);
+Route::post('/Star_product', [ProductController::class,  "Star_product"]);
 
 Route::get('/admin',[AdminController::class, "index"]);
 Route::get('/profile',[UserController::class, "profile"]);
@@ -71,10 +74,7 @@ Route::get('/admin/users', function () {
 Route::get('/admin/comment', [ProductController::class, 'comments']);
 
 
-Route::get('/admin/de', function () {
-    return view('dashoard');
-});
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+Route::group(['prefix' => 'laravel-filemanager',] ,function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
 });
