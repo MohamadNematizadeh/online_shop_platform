@@ -7,7 +7,7 @@
   <h3 align="center">  Mohammad Shop Website </h3>
 
   <p align="center">
-    You can get more information from my personal website
+    MohammadShop is an online shop platform designed to provide a seamless shopping experience. It includes features such as product browsing, cart management, and order processing.
     <br/>
     <br/>
     <a href="https://github.com/MohamadNematizadeh/laravel_mohammad_shop">View Demo</a>
