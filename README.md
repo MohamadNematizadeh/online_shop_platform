@@ -14,7 +14,7 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/arshiafarrokhi/BitCoinLivePrice/total) ![Contributors](https://img.shields.io/github/contributors/arshiafarrokhi/BitCoinLivePrice?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/arshiafarrokhi/BitCoinLivePrice?style=social) ![Issues](https://img.shields.io/github/issues/arshiafarrokhi/BitCoinLivePrice) 
+![Downloads](https://img.shields.io/github/downloads/MohamadNematizadeh/Websit_Mohammad_Shop/total) ![Contributors](https://img.shields.io/github/contributors/MohamadNematizadeh/Websit_Mohammad_Shop?color=dark-green) ![Stargazers](https://img.shields.io/github/stars/MohamadNematizadeh/Websit_Mohammad_Shop?style=social) ![Issues](https://img.shields.io/github/issues/MohamadNematizadeh/Websit_Mohammad_Shop) 
 
 ## About The Project
 
