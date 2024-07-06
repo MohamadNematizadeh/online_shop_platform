@@ -3,7 +3,7 @@
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="800">
   </a>
 
-<p align="center" ><img src = "https://skillicons.dev/icons?i=php,laravel,sql,mysql,sql server,bootstrap,javascript"></p>
+<p align="center" ><img src = "https://skillicons.dev/icons?i=php,laravel,sql,mysql,bootstrap,javascript"></p>
 
   <h3 align="center">  Mohammad Shop Website </h3>
 
